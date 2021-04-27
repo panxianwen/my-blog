@@ -1,5 +1,12 @@
 ---
 title: PWA
+author: 文子
+tags:
+  - PWA
+  - JS
+categories:
+  - Web技术
+abbrlink: 67dc4d37
 ---
 ### PWA简单入门及一些使用场景
 

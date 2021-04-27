@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 起风了
+title: 种下星星的日子
 subtitle: ''
 description: ''
 keywords:
@@ -14,8 +14,12 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: http://panxianwen.com
+#permalink: :year/:month/:day/:title/
+permalink: wzblog/:abbrlink/
+abbrlink:
+  alg: crc32 #算法：crc16(default) and crc32
+  rep: hex   #进制：dec(default) and hex
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -41,7 +45,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
