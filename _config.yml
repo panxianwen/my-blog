@@ -108,8 +108,14 @@ theme: volantis
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
-
+  type: 'rsync'
+  host: '82.156.67.62'
+  user: 'root'
+  root: '/www/wwwroot/myblog'
+  delete: true
+  verbose: true
+  ignore_errors: false 
+  
 import:
   meta:
     - <meta name="msapplication-TileColor" content="#ffffff">
