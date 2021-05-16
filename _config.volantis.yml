@@ -93,7 +93,7 @@ pages:
 article:
   # 文章列表页面的文章卡片布局方案
   preview:
-    scheme: landscape # landscape volantis
+    scheme: volantis # landscape volantis
     # pin icon for post
     pin_icon: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4cc.svg
     # auto generate title if not exist
@@ -140,7 +140,8 @@ article:
         enable: true
         permalink: '本文永久链接是：'
         content:
-          - '博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议'
+          - '博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议-------->'
+          - '测试'
           - permalink
       # ----------------
       # 打赏组件 (for layout: post)
@@ -324,12 +325,12 @@ sidebar:
     blogger:
       class: blogger
       display: [desktop, mobile] # [desktop, mobile]
-      avatar: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
-      shape: rectangle # circle, rectangle
+      avatar: ./images/wenzi.jpg
+      shape: circle # circle, rectangle
       url: /about/
       title:
       subtitle:
-      jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
+      jinrishici: false # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
         - icon: fas fa-rss
           url: /atom.xml
@@ -461,10 +462,10 @@ site_footer:
   #  <span id="lc-sv">本站总访问量为 <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
   #  <span id="lc-uv">访客数为 <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
   # site info
-  analytics: >
+  info: >
     <span id="lc-sv">京 ICP备 2021013002号</span>
   # site copyright
-  copyright: '[Copyright © 2020-2021 文子](/)'
+  copyright: '[Copyright © 2020-2021 文子 All Rights Reserved](/)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
   br: '<br>'
 ############################### Site Footer ############################### > end
@@ -733,7 +734,7 @@ color_scheme:
     # 网站背景上的文字
     site_inner: '#fff'
     # 网站页脚文字
-    site_footer: '#666'
+    site_footer: '#1c1c1c'
 
     # 卡片背景色
     card: '#fff'
@@ -862,15 +863,21 @@ custom_css:
     footnote: .78125rem
   fontfamily:
     logofont:
-      fontfamily: '"Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
-      name: 'Varela Round'
-      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf
+      #fontfamily: '"Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      fontfamily: 'sxls,"PingFang SC","Microsoft YaHei",Helvetica,Arial,Helvetica,monospace'
+      #name: 'Varela Round'
+      name: 'sxls'
+      #url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf
+      url: https://cdn.jsdelivr.net/gh/inkss/common@master/hexo/fonts/foundertype/sxls.OTF
       weight: normal
       style: normal
     bodyfont:
-      fontfamily: 'UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
-      name: 'UbuntuMono'
-      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf
+      #fontfamily: 'UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      fontfamily: 'fwzc,-apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,Menlo,Monaco,monospace,sans-serif'
+      #name: 'UbuntuMono'
+      name: 'fwzc'
+      #url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf
+      url: https://cdn.jsdelivr.net/gh/inkss/common@master/hexo/fonts/foundertype/fwzcN.OTF
       weight: normal
       style: normal
     codefont:
